@@ -12,7 +12,7 @@ public:
 class Gun : public Weapon
 {
 public:
-	void Shoot()
+	void Shoot() override
 	{
 		cout << "Bang from Gun!" << endl;
 	}
@@ -20,7 +20,7 @@ public:
 class SubMachineGun : public Gun
 {
 public:
-	void Shoot()
+	void Shoot() override
 	{
 		cout << "Bang from SubMachineGun!" << endl;
 	}
